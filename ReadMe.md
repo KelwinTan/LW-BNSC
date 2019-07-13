@@ -32,5 +32,5 @@ The FrontEnd:
 
 - User Registration and Login are successful.
 
-Hopefully could have more time to develop this web, but I am currently having my exams.
+Hopefully, I could have more time to develop this web, but I am currently having my exams.
 Thank You.
