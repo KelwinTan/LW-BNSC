@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indonesia Game Portal</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/register.css">
+
+</head>
+
+<body>
+
+
+    <!-- <div class="header">
+        <div class="header-logo">
+            <img src="assets/logo/logo.png" alt="Logo">
+        </div>
+
+        <div class="header">
+            <a href="home.html" class="navbar-items">Home</a>
+            <a href="register.html" class="navbar-items more-right">Register</a>
+            <input class="search-field" name="search" type="text" placeholder="Feel free to ask any question...">
+            <button class="search-btn" type="button">Ask Question</button>
+            <div class="dpdwn more-left">
+                <span class="navbar-items">More</span>
+                <div class="dpdwn-content">
+                    <a href="partner.html">Our Partners</a>
+                    <a href="jobs.html">Find Jobs</a>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <div id="order-container">
+        <div class="order-content" id="order-left">
+
+            <div style="text-align:center;">
+                <img style="width: 200px; height: 200px;" src="assets/logo.png" alt="logo">
+            </div>
+            <h1 id="order-title">Registration Form</h1>
+            <form action="" id="order-form">
+
+                <div class="form-content">
+                    <input type="text" name="username" id="username" class="form-box">
+                    <label for="">Username*</label>
+                </div>
+                <div class="form-content">
+                    <input type="text" name="name" id="name" class="form-box" onblur="validateName()">
+                    <label for="">Name*</label>
+                    <label class="err_label" id="name_err"></label>
+                </div>
+
+                <div class="form-content">
+                    <input type="text" name="email" id="email" class="form-box" value="" onblur="validateEmail()">
+                    <label for="">Email*</label>
+                    <label class="err_label" id="email_err"></label>
+
+                </div>
+
+                <div class="form-content">
+                    <input type="password" name="password" id="password" class="form-box" onblur="validatePassword()">
+                    <label for="">Password*</label>
+                    <label class="err_label" id="password_err"></label>
+                </div>
+
+                <div class="form-content">
+                    <input type="text" name="telephone" id="telephone" class="form-box" value="08"
+                        onblur="validateTelephone()">
+                    <label for="">Phone Number</label>
+                    <label class="err_label" id="telephone_err"></label>
+                </div>
+
+                <div class="form-content">
+                    <select id="gender" name="gender" class="form-box" onblur="validateGender()">
+                        <option>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <label for="">Gender*</label>
+                    <label class="err_label" id="gender_err"></label>
+                </div>
+                <div class="form-content">
+                    <input type="date">
+                    <label for="">Date of Birth</label>
+                    <label class="err_label" id="gender_err"></label>
+                </div>
+
+                <div class="form-content">
+                    <input type="file">
+                    <label for="">Profile Picture</label>
+                    <label class="err_label" id="gender_err"></label>
+                </div>
+
+                <div class="form-content">
+                    <input type="button" value="SUBMIT" id="submit-button" onClick="order()">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy;</p>
+        <p>Designed By:Kelwin Tantono</p>
+    </div>
+</body>
+<script type="text/javascript" src="js/register.js"></script>
+
+</html>

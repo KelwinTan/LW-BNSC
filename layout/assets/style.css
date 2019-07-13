@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    /* background: linear-gradient(to right, #d31027, #ea384d); */
+    background: #202024;
+}
+
+#menu{
+    width: 55px;
+    display: flex; /* so that the logo can be centered */
+    flex-direction: column;
+    position: fixed;
+
+}
+
+#menu img{
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+#menu a{
+    margin: 0 auto;
+}
+
+#title{
+    width: -webkit-fill-available;
+    color: white;
+    text-align: center;
+}
+
+.social-media img{
+    width: 50px;
+    height: 50px;
+    padding: 0px 20px 20px 20px;
+}
+
+#footer{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+
+.content{
+    background: white;
+    color: #ff0000;
+    padding: 5px;
+    height: auto;
+}
+
+.content-games{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+.single-game{
+    width: 31%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background:#2c2c32;
+    margin: 0 1em 2em 1em;  
+}
+
+.inner-content{
+    padding: 0px 10px;
+}
+
+.inner-content p{
+    height: 100px;
+    overflow: auto;
+}
+
+.inner-content button{
+  background-color: white; 
+  border:2px solid #555555  ;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.inner-content button:hover{
+    background: #555555;
+    color: white;
+}
+
+.single-game img{
+    height: 45%;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+
+
+#quote {
+    background-repeat: repeat;
+    overflow: hidden;
+    position: relative;
+}
+.overlayText {
+    color:#000;
+    position:absolute;
+    top: 0;
+}   
+
+/* This is just some CSS styling to make the video fill 100% of its div */
+.video-wrapper {
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+}   
+
+.video-wrapper h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    margin: 0;
+    color: red;
+}
+
+.video-wrapper p{
+    font-size: 1.5em;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-wrapper video {
+    filter: brightness(50%) blur(3px);
+}
+
+.display-resp{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .display-resp{
+        display: block !important;
+    }
+    .video-wrapper{
+        display: none;
+    }
+    .single-game{
+        width: 85%;
+    }
+    .content-games{
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .social-media{
+        display: none;
+    }
+}
